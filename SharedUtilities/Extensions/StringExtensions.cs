@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SharedUtilities.Extensions
+﻿namespace SharedUtilities.Extensions
 {
     public static class StringExtensions
     {
@@ -14,6 +8,16 @@ namespace SharedUtilities.Extensions
             {
                 string[] strArray = inputstring.Split(' ');
                 return strArray.Count();
+            }
+
+            return 0;
+        }
+
+        public static int GetCharacterCount(this string inputstring, char character)
+        {
+            if (!string.IsNullOrEmpty(inputstring))
+            {
+                return inputstring.Split(character).Length - 1;
             }
 
             return 0;

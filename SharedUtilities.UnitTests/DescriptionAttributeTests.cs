@@ -5,7 +5,7 @@ using Xunit;
 
 namespace SharedUtilities.UnitTests
 {
-    public class DescriptionAttributeTests
+    public class EnumDescriptionAttributeTests
     {
         [Theory]
         [InlineData("", CrudEnumTest.Default)]

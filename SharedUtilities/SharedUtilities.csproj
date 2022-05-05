@@ -4,7 +4,19 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company />
+    <RepositoryUrl>https://github.com/pmishra-developer/SharedUtilities</RepositoryUrl>
+    <PackageIcon>2035509-200.png</PackageIcon>
+    <Description>A Collection of Some Useful Extension and Helper Functions</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Users\Pankaj.Mishra\OneDrive - Sainsbury's Supermarkets Ltd\Desktop\2035509-200.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
