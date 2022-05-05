@@ -35,43 +35,19 @@ namespace SharedUtilities.UnitTests
             status.Should().NotBe(result);
         }
 
-        //[Theory]
-        //[InlineData(SeasonEnum.Delete, "delete")]
-        //[InlineData(SeasonEnum.Create, "create")]
-        //[InlineData(SeasonEnum.Update, "update")]
-        //public void ShouldReturn_ValidDescriptionFor_CorrectEnum(SeasonEnum testValue, string result)
-        //{
-        //    var status = testValue.GetDescription<SeasonEnum>();
-        //    status.Should().Be(result);
-        //}
-
-        //[Theory]
-        //[InlineData(SeasonEnum.Delete, "TestValue")]
-        //[InlineData(SeasonEnum.Update, "create")]
-        //public void ShouldReturn_InvalidDescriptionFor_WrongEnum(SeasonEnum testValue, string result)
-        //{
-        //    var status = testValue.GetDescription<SeasonEnum>();
-        //    status.Should().NotBe(result);
-        //}
-
         #region Test Data Setup
         public enum SeasonEnum
         {
             Default,
-
             [Display(Name = "It's autumn")]
             Autumn,
-
             [Display(Name = "It's winter")]
             Winter,
-
             [Display(Name = "It's spring")]
             Spring,
-
             [Display(Name = "It's summer")]
             Summer
         }
-
         #endregion
     }
 }
